@@ -1,0 +1,9 @@
+E:\проекты\HomeworkWinForms1\bin\Debug\HomeworkWinForms1.exe.config
+E:\проекты\HomeworkWinForms1\bin\Debug\HomeworkWinForms1.exe
+E:\проекты\HomeworkWinForms1\bin\Debug\HomeworkWinForms1.pdb
+E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.csprojAssemblyReference.cache
+E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.Properties.Resources.resources
+E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.csproj.GenerateResource.cache
+E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.exe
+E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.pdb
+E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.Form1.resources
