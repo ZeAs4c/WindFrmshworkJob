@@ -130,50 +130,82 @@ namespace HomeworkWinForms1
 			DialogResult AddJob = MessageBox.Show("Сохранить данные?", "Сохранение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 			if(AddJob == DialogResult.Yes)
 			{
+				if(_txtEnterSurname.Text == "")
+				{
+					MessageBox.Show("Введите фамилию!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if(_txtEnterName.Text == "")
+				{
+					MessageBox.Show("Введите Имя!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if((_rdiMale.Checked==false)&&(_rdiWoman.Checked == false))
+				{
+					MessageBox.Show("Выберите пол!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if((_chkProgrammingCplus.Checked == false) && (_chkTesting.Checked == false) && (_chkWebDesign.Checked == false))
+				{
+					MessageBox.Show("Выберите Компетенции(ю)!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if((_chkProgrammingCplus.Checked == true) && (_cmbLvlProgrammingCplus.Text == ""))
+				{
+					MessageBox.Show("Выберите уровень программирования!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if((_chkTesting.Checked == true) && (_cmbLvlTesting.Text == ""))
+				{
+					MessageBox.Show("Выберите уровень тестирования!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if((_chkWebDesign.Checked == true) && (_cmbLvlWebDesign.Text == ""))
+				{
+					MessageBox.Show("Выберите уровень веб-дизайна!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else if(_cmbChoicePosition.Text == "")
+				{
+					MessageBox.Show("Выберите должность!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Question);
+				}
+				else
+				{	
+					SummaryTable.Rows.Add();
+					SummaryTable[0, count].Value = _txtEnterSurname.Text;
+					SummaryTable[1, count].Value = _txtEnterName.Text;
+					if(_rdiWoman.Checked == true)
+					{
+						SummaryTable[2, count].Value = _rdiWoman.Text;
+					}
+					else if(_rdiMale.Checked == true)
+					{
+						SummaryTable[2, count].Value = _rdiMale.Text;
+					}
+
+
+					if(_chkProgrammingCplus.Checked == true)
+					{
+						SummaryTable[3, count].Value = _cmbLvlProgrammingCplus.SelectedItem.ToString();
+					}
+					else if(_chkProgrammingCplus.Checked == false)
+					{
+						SummaryTable[3, count].Value = "Отсутствует";
+					}
+					if(_chkTesting.Checked == true)
+					{
+						SummaryTable[4, count].Value = _cmbLvlTesting.SelectedItem.ToString();
+					}
+					else if(_chkTesting.Checked == false)
+					{
+						SummaryTable[4, count].Value = "Отсутствует";
+					}
+					if(_chkWebDesign.Checked == true)
+					{
+						SummaryTable[5, count].Value = _cmbLvlWebDesign.SelectedItem.ToString();
+					}
+					else if(_chkWebDesign.Checked == false)
+					{
+						SummaryTable[5, count].Value = "Отсутствует";
+					}
+
+					SummaryTable[6, count].Value = _cmbChoicePosition.SelectedItem.ToString();
+					count++;
+				}
 				
-				SummaryTable.Rows.Add();
-
-				SummaryTable[0, count].Value = _txtEnterSurname.Text;
-				SummaryTable[1, count].Value = _txtEnterName.Text;
-
-
-				if(_rdiWoman.Checked == true)
-				{
-					SummaryTable[2, count].Value = _rdiWoman.Text;
-				}
-				else if(_rdiMale.Checked == true)
-				{
-					SummaryTable[2, count].Value = _rdiMale.Text;
-				}
-
-
-				if(_chkProgrammingCplus.Checked == true)
-				{
-					SummaryTable[3, count].Value = _cmbLvlProgrammingCplus.SelectedItem.ToString();
-				}
-				else if(_chkProgrammingCplus.Checked == false)
-				{
-					SummaryTable[3, count].Value = "Отсутствует";
-				}
-				if(_chkTesting.Checked == true)
-				{
-					SummaryTable[4, count].Value = _cmbLvlTesting.SelectedItem.ToString();
-				}
-				else if(_chkTesting.Checked == false)
-				{
-					SummaryTable[4, count].Value = "Отсутствует";
-				}
-				if(_chkWebDesign.Checked == true)
-				{
-					SummaryTable[5, count].Value = _cmbLvlWebDesign.SelectedItem.ToString();
-				}
-				else if(_chkWebDesign.Checked == false)
-				{
-					SummaryTable[5, count].Value = "Отсутствует";
-				}
-
-				SummaryTable[6, count].Value = _cmbChoicePosition.SelectedItem.ToString();
-				count++; 
 			}
 		}
 

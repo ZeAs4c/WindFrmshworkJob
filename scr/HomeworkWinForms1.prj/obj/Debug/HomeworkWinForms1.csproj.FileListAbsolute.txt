@@ -7,3 +7,12 @@ E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.csproj.GenerateR
 E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.exe
 E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.pdb
 E:\проекты\HomeworkWinForms1\obj\Debug\HomeworkWinForms1.Form1.resources
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\bin\Debug\HomeworkWinForms1.exe.config
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\bin\Debug\HomeworkWinForms1.exe
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\bin\Debug\HomeworkWinForms1.pdb
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\obj\Debug\HomeworkWinForms1.csprojAssemblyReference.cache
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\obj\Debug\HomeworkWinForms1.Form1.resources
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\obj\Debug\HomeworkWinForms1.Properties.Resources.resources
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\obj\Debug\HomeworkWinForms1.csproj.GenerateResource.cache
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\obj\Debug\HomeworkWinForms1.exe
+E:\repozitory\WindFrmshworkJob\scr\HomeworkWinForms1.prj\obj\Debug\HomeworkWinForms1.pdb
